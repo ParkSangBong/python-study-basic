@@ -107,4 +107,27 @@ print(list(reversed(name)))
 print(tuple(reversed(name)))
 print(name[::-1])
 
+print("===================================================================")
 
+a = ['base ball', 'basket ball', 'soccer', 'base ball', 'soccer','soccer', 'basket ball', 'base ball', 'basket ball', 'soccer', 'basket ball', 'basket ball','base ball', 'soccer', 'soccer', 'basket ball', 'basket ball', 'base ball', 'base ball']
+
+b = set(a)
+for key in b:
+    count = 0
+    for value in a:
+        if(key == value):
+            count += 1
+        else:
+            continue
+    print(key, count)
+
+print("======================================================================")
+
+d = 0
+for i in range(0, 10):
+    print(d, end=" ")
+    d = 2**i
+else:
+    d = int(d/2)
+    for _ in range(0,2):
+        print(d, end=" ")

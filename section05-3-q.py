@@ -70,11 +70,18 @@ for a in q3:
         continue
     print(a)
 
+q5 = [x for x in q3 if x != '정']
+print(q5)
+
 # 7. 1부터 100까지 자연수 중 '홀수'만 한 라인으로 출력 하세요.
 for n in range(1, 101):
     if (n % 2) == 0:
         continue
     print(n, end="")
+print()
+
+q6 = [x for x in range(1,101) if (x % 2) != 0]
+print(q6)
 
 print()
 # 8. 아래 리스트 항목 중에서 5글자 이상의 단어만 출력하세요.
@@ -109,3 +116,18 @@ for a in q6:
 
 # for n in range(0,12):
 #     print(n,end=" ")
+
+# 리스트 컴프리헨션
+# 일방적인 방법
+numbers = []
+
+for n in range(1,101):
+    numbers.append(n)
+print(numbers)
+
+numbers2 = [x for x in range(1, 101)]
+print(numbers2)
+
+x = [x for x in range(1, 100) if 조건문]
+
+
